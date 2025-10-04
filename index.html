@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Frame Portfolio</title>
+    <link rel="shorcut icon" href="image/Logo03.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e6239f3764.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="image/logo002.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Welcome to <span>Visual Frame</span> </p>
+                <h1>Your Creative Partner in <br> Graphics Design and VideoEditing</h1>
+
+            </div>
+        </div>
+        <!-- <model-viewer id="threed" src="3d model/robotic_spider.glb" autoplay auto-rotate camera-controls disable-zoom></model-viewer> -->
+
+
+    </div>
+    <!-- ---------- about section -------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <video src="video/Main.mp4" height="400" autoplay controls loop muted></video>
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Us</h1>
+                    <p>
+                        We are a team of passionate designers and video editors dedicated to bringing your ideas to
+                        life.
+                        Our mission is to provide high-quality graphics and video content that captivates and engages
+                        your audience.
+                        With years of experience in the industry, we understand the importance of visual storytelling
+                        and strive to
+                        create content that resonates with your brand's identity.
+                    </p>
+                    <br>
+                    <p>
+                        Whether you need stunning graphics for your website, eye-catching social media posts,
+                        or professional video editing services, we have the skills and expertise to deliver exceptional
+                        results.
+                        Our team is committed to understanding your unique vision and working closely with you to ensure
+                        that every project meets your expectations.
+                    </p>
+                    <br>
+                    <p>
+                        At Visual Frame, we believe that creativity knows no bounds.
+                        We are constantly exploring new techniques and trends in design and video editing to stay ahead
+                        of the curve and provide you with innovative solutions that stand out in a crowded digital
+                        landscape.
+                    </p>
+                </div>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('services')">Our Services 🚀</p>
+                    <p class="tab-links" onclick="opentab('team')">Meet Our Team 🤝</p>
+                    <p class="tab-links" onclick="opentab('Choose')">Why Choose Us? ⭐</p>
+                </div>
+                <div class="tab-contents active-tab" id="services">
+                    <ul>
+                        <li>At <b>Visual Frame</b>, we specialize in a variety of creative services to bring your ideas
+                            to life:</li>
+                        <li><span>🎬 Video Editing</span><br>High-quality, professional editing for all kinds of videos.
+                        </li>
+                        <li><span>🎨 Poster & Card Designing </span><br>Stunning designs for social media, events, and
+                            branding.</li>
+                        <li><span>📱 Short/Reel Video Editing</span><br>Engaging reels and short videos for Instagram,
+                            TikTok, and other platforms.</li>
+                        <li><span>▶️ YouTube Video Editing </span><br>Well-crafted, audience-attracting videos for
+                            YouTube creators.</li>
+                        <li><span>💍 Wedding Reels & Cinematic Videos</span><br>Edit your special moments with stunning
+                            cinematic visuals.</li>
+                        <li><span>📢 Promotional Videos </span><br>Eye-catching promos for businesses, brands, and
+                            personal projects.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="team">
+                    <ul>
+                        <li><a href="https://fern-astronomy-2d8.notion.site/Pranav-Garasiya-1ff8428f7ee58033b2c3c3330a792dc6" target="_blank" style="text-decoration:none">
+                            <span>🎥 Pranav - VFX Artist</span></a>
+                            <br>Expert in special effects, motion graphics, and
+                            stunning visuals.</li>
+                        
+                        <li><a href="https://fern-astronomy-2d8.notion.site/Prath-Garasiya-1ff8428f7ee580308463e46b94769e10?pvs=143" target="_blank" style="text-decoration:none">
+                            <span>🎞 Parth - Video Editor</span></a><br>Skilled in transforming raw footage into cinematic
+                            masterpieces.</li>
+
+                        <li><span>🎨 Rupal - Graphic Designer</span><br>Specializes in creative designs, branding, and
+                            posters.</li>
+
+                        <li><span>🖌 Rutu - Designer</span><br>Focuses on aesthetic layouts and user-friendly visuals.
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Choose">
+                    <ul>
+                        <li>Here’s what makes <b>Visual Frame</b> stand out:</li>
+                        <li><span>✔ Creative & Unique Work</span><br> Every project is crafted with originality and
+                            innovation.</li>
+                        <li><span>✔ High-Quality Output </span><br>We use the latest tools and techniques for
+                            professional-grade results.</li>
+                        <li><span>✔ Fast & Reliable Service</span><br>Timely delivery with a focus on quality and client
+                            satisfaction.</li>
+                        <li><span>✔ Affordable Pricing </span><br>Premium services at competitive rates.</li>
+                        <li><span>✔ Passionate Teamt</span><br>We love what we do, and it reflects in our work.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- -------------- services ------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Our services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-scissors"></i>
+                    <h2>Video Editing</h2>
+                    <p>High-quality, professional editing for all kinds of videos.
+                        Engaging reels and short videos for Instagram, TikTok, and other platforms.
+                        Eye-catching promos for businesses, brands, and personal projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Graphic Designing</h2>
+                    <p>High-quality, professional editing for all kinds of videos.
+                        Engaging reels and short videos for Instagram, TikTok, and other platforms.
+                        Eye-catching promos for businesses, brands, and personal projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Poster & Card Designing</h2>
+                    <p>High-quality, professional editing for all kinds of videos.
+                        Engaging reels and short videos for Instagram, TikTok, and other platforms.
+                        Eye-catching promos for businesses, brands, and personal projects.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- ------------- use software --------------  -->
+
+    <div id="software">
+        <div class="container">
+            <h1 class="sub-title">Use software</h1>
+            <div class="software-list">
+                <img src="image/PNG/DaVinci_Resolve_Studio.png" class="logo-2">
+                <img src="image/PNG/Adobe_After_Effects.png" class="logo-2">
+                <img src="image/PNG/Adobe_Premiere_Pro.png" class="logo-2">
+                <img src="image/PNG/Adobe_Photoshop.png" class="logo-2">
+                <img src="image/PNG/Adobe_Illustrator.png" class="logo-2">
+                <img src="image/PNG/blender.png" class="logo-2">
+                <img src="image/PNG/figma.png" class="logo-2">
+                <img src="image/PNG/capcut.png" class="logo-2">
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- -------------- Portfolio -------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="worklist">
+                <div class="work">
+                    <video src="video/Portfolio 01.mp4" height="280" autoplay loop muted></video>
+                    <div class="layer">
+                        <h3>Pre Wedding</h3>
+                        <p>We create stunning visual effects that enhance your videos and captivate your audience.</p>
+                        <a href="https://www.playbook.com/s/portfolio-001/5QwHTBrh9RURnMnMrsZ7xMmy" target="_blank" ><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="video/Portfolio 02.mp4" height="280" autoplay loop muted></video>
+                    <div class="layer">
+                        <h3>Visual effects</h3>
+                        <p>We create stunning visual effects that enhance your videos and captivate your audience.</p>
+                        <a href="https://www.playbook.com/s/portfolio-001/zE8tQ6KgoNVRz13aVugMfoc4" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <video src="video/Portfolio 03.mp4" height="280" autoplay loop muted></video>
+                    <div class="layer">
+                        <h3>Promotional video</h3>
+                        <p>We create stunning visual effects that enhance your videos and captivate your audience.</p>
+                        <a href="https://www.playbook.com/s/portfolio-001/FgAczTm12cgMor8zQv97wqEq" target="_blank" ><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://www.playbook.com/s/portfolio-001/portfolio" target="_blank" class="btn">See More</a>
+
+        </div>
+
+    </div>
+
+    <!-- ---------------- contact us -------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Us</h1>
+                    <p><a href="mailto: visualframestudio04@gmail.com"><i class="fa-solid fa-paper-plane"></i></a>visualframestudio04@gmail.com</p>
+                    <p><a href="tel: 7984991628 "> <i class="fa-solid fa-square-phone"></i></a>7984991628</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/visualframe.studio/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/7984991628" target="_blank" ><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="https://forms.gle/BonjVmeMw4h95Syn6" target="_blank" class="btn btn2">Work With Us</a>
+                </div>
+                <div class="contact-Right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <input type="number" name="Phone" placeholder="Your Phone" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyrite">
+            <p>&copy; 2025 VisualFrame Studio. All rights reserved.</p>
+        </div>
+
+        <script type="module"
+            src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzrgP8rVZ6uC57RMxGMGmxEQG3-wKdvqLqdpThcuwQm12MX69fmNfwS01iBaxN0BEYm/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully!";
+                        setTimeout(function () {
+                            msg.innerHTML = "";
+                        }, 5000);
+
+                        form.reset();
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+</body>
+
+</html>
