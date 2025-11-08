@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio Showcase</title>
+    <link rel="stylesheet" href="portfolio01.css" />
+</head>
+
+<body class="p-container">
+    <div id="p-header">
+        <div>
+            <nav>
+                <a href="index.html"><img src="image/logo002.png" class="logo"></a>
+                <ul id="sidemenu">
+                    <li><a href="index.html#header">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="Portfolio01.html">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+
+    </div>
+
+    <header>
+        <div>
+            <h1>Video Editing Portfolio</h1>
+            <p class="lead">Selected projects — click a thumbnail to open details.</p>
+        </div>
+
+        <div class="controls" aria-label="Filter projects">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="Event">Pre-Wedding & Events</button>
+            <button class="btn" data-filter="Edits">Edits</button>
+            <button class="btn" data-filter="Cinematic">Cinematic & Product Shoot</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="grid" id="gallery">
+            <!-- Items: adjust data attributes, image sources or captions as needed -->
+
+            <!-- Portfolio Item 1 -->
+
+            <article class="card" data-category="Event" data-title="Product Landing"
+                data-desc="Responsive landing page focused on conversion and speed." data-hover-video
+                data-src="video/Horizontal/Portfolio 01.mp4">
+                <span class="overlay-label">Pre Wedding</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 01.png"
+                    src="video/Horizontal/Portfolio 01.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">CHANDNI</h3>
+                    <p class="cats">Pre Wedding • Project 001</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 2 -->
+
+            <article class="card" data-category="Edits" data-title="Brand Identity"
+                data-desc="Complete identity system for a boutique studio." data-hover-video
+                data-src="video/Horizontal/Portfolio 02.mp4">
+                <span class="overlay-label">Edits</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 02.png"
+                    src="video/Horizontal/Portfolio 02.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Dregon VFX Showreel</h3>
+                    <p class="cats">VFX Edits • Project 002</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 3 -->
+
+            <article class="card" data-category="Event" data-title="Landscape Series"
+                data-desc="Editorial Cinematicgraphy series shot on location." data-hover-video
+                data-src="video/Horizontal/Portfolio 03.mp4">
+                <span class="overlay-label">Cinematic</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 03.png"
+                    src="video/Horizontal/Portfolio 03.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Spring Fiesta, IIIT Surat</h3>
+                    <p class="cats">Event Promo • Project 002</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 4 -->
+
+            <article class="card" data-category="Cinematic" data-title="Acer Predator"
+                data-desc="Complex data visualization interface and admin tools." data-hover-video
+                data-src="video/Horizontal/Portfolio 04.mp4">
+                <span class="overlay-label">Product Shoot</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 04.png"
+                    src="video/Horizontal/Portfolio 04.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Acer Predator</h3>
+                    <p class="cats">Cinematic • Product Shoot • Project 001</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 5 -->
+
+            <article class="card" data-category="Edits" data-title="Velorent Montage"
+                data-desc="Minimal packaging suite for a premium product line." data-hover-video
+                data-src="video/Horizontal/Portfolio 05.mp4">
+                <span class="overlay-label">Edits</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 05.png"
+                    src="video/Horizontal/Portfolio 05.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Velorent Montage</h3>
+                    <p class="cats">Montage Edits • Gaming Edits</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 6 -->
+
+            <article class="card" data-category="Edits" data-title="Bullet Edits"
+                data-desc="Studio portrait series exploring light and texture." data-hover-video
+                data-src="video/Horizontal/Portfolio 06.mp4">
+                <span class="overlay-label">Edits</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 06.png"
+                    src="video/Horizontal/Portfolio 06.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Bullet Edits</h3>
+                    <p class="cats">Cinematicgraphy • Studio</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 7 -->
+
+            <article class="card" data-category="Edits" data-title="Saputara Cinematic"
+                data-desc="User-centered e‑commerce experience with accessible components." data-hover-video
+                data-src="video/Horizontal/Portfolio 07.mp4">
+                <span class="overlay-label">Edits</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 07.png"
+                    src="video/Horizontal/Portfolio 07.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Saputara Cinematic</h3>
+                    <p class="cats">Cinematic Edits• Project 003</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 8 -->
+
+            <article class="card" data-category="Event" data-title="Soulmates in Sync"
+                data-desc="A lively, colorful identity system for a cultural festival." data-hover-video
+                data-src="video/Horizontal/Portfolio 08.mp4">
+                <span class="overlay-label">Pre-Wedding</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 08.png"
+                    src="video/Horizontal/Portfolio 08.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Soulmates in Sync</h3>
+                    <p class="cats">Pre-Wedding • Project 002</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 9 -->
+
+            <article class="card" data-category="Cinematic" data-title="Street Cinematicgraphy"
+                data-desc="Candid moments captured across several cities." data-hover-video
+                data-src="video/Horizontal/Portfolio 09.mp4">
+                <span class="overlay-label">Cinematic</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 09.png"
+                    src="video/Horizontal/Portfolio 09.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Street Cinematicgraphy</h3>
+                    <p class="cats">Cinematicgraphy • Documentary</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 10 -->
+
+            <article class="card" data-category="Cinematic" data-title="Street Cinematicgraphy"
+                data-desc="Candid moments captured across several cities." data-hover-video
+                data-src="video/Horizontal/Portfolio 010.mp4">
+                <span class="overlay-label">Cinematic</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 010.png"
+                    src="video/Horizontal/Portfolio 010.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Street Cinematicgraphy</h3>
+                    <p class="cats">Cinematicgraphy • Documentary</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 11 -->
+
+            <article class="card" data-category="Cinematic" data-title="Street Cinematicgraphy"
+                data-desc="Candid moments captured across several cities." data-hover-video
+                data-src="video/Horizontal/Portfolio 011.mp4">
+                <span class="overlay-label">Acer Predator Promo</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 011.png"
+                    src="video/Horizontal/Portfolio 011.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Acer Predator Promo</h3>
+                    <p class="cats">Cinematic • Product Shoot • Project 002</p>
+                </div>
+            </article>
+
+            <!-- Portfolio Item 12 -->
+
+            <article class="card" data-category="Cinematic" data-title="Street Cinematicgraphy"
+                data-desc="Candid moments captured across several cities." data-hover-video
+                data-src="video/Horizontal/Portfolio 012.mp4">
+                <span class="overlay-label">Acer Predator Edits</span>
+                <video class="thumb" poster="video/Horizontal/Thumbnail/Portfolio 012.png"
+                    src="video/Horizontal/Portfolio 012.mp4" loop muted alt="Product Landing screenshot"
+                    loading="lazy"></video>
+                <div class="meta">
+                    <h3 class="title">Acer Predator Edits</h3>
+                    <p class="cats">Cinematic • Product Shoot • Project 003</p>
+                </div>
+            </article>
+
+
+        </section>
+    </main>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lb-inner" role="document">
+            <button class="close-btn" id="lb-close" aria-label="Close">✕</button>
+            <div class="lb-media" id="lb-media">
+                <video src="" alt="" id="lb-video" autoplay controls></video>
+            </div>
+            <aside class="lb-side" id="lb-side">
+                <h2 class="lb-title" id="lb-title">Project Title</h2>
+                <p class="lb-desc" id="lb-desc">Project description</p>
+                <div class="lb-actions">
+                    <a class="icon-btn" id="open-link" href="#" target="_blank" rel="noopener">Open Project</a>
+                    <button class="icon-btn" id="prev-btn" aria-label="Previous">← Prev</button>
+                    <button class="icon-btn" id="next-btn" aria-label="Next">Next →</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>Tip: use filters above to narrow items. Keyboard: Esc to close, ← → to navigate.</footer>
+
+    <script>
+        // Lightweight gallery: filtering + lightbox with keyboard nav
+        (function () {
+            const grid = document.getElementById('gallery');
+            const items = Array.from(grid.querySelectorAll('.card'));
+            const filters = document.querySelectorAll('[data-filter]');
+            let currentIndex = -1;
+            const lb = document.getElementById('lightbox');
+            const lbvideo = document.getElementById('lb-video');
+            const lbTitle = document.getElementById('lb-title');
+            const lbDesc = document.getElementById('lb-desc');
+            const lbClose = document.getElementById('lb-close');
+            const prevBtn = document.getElementById('prev-btn');
+            const nextBtn = document.getElementById('next-btn');
+            const openLink = document.getElementById('open-link');
+
+            // Filtering
+            filters.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filters.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+                    const f = btn.dataset.filter;
+                    items.forEach(i => {
+                        i.style.display = (f === 'all' || i.dataset.category === f) ? '' : 'none';
+                    });
+                });
+            });
+
+            // Open lightbox
+            function openLightbox(index) {
+                const visible = items.filter(i => i.style.display !== 'none');
+                if (index < 0 || index >= visible.length) return;
+                const el = visible[index];
+                currentIndex = items.indexOf(el);
+                const src = el.dataset.src || el.querySelector('video')?.src;
+                lbvideo.src = src;
+                lbvideo.alt = el.dataset.title || '';
+                lbTitle.textContent = el.dataset.title || '';
+                lbDesc.textContent = el.dataset.desc || '';
+                openLink.href = src;
+                lb.classList.add('open');
+                lb.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lb.classList.remove('open');
+                lb.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                currentIndex = -1;
+            }
+
+            // Click items
+            items.forEach((it, idx) => {
+                it.addEventListener('click', () => {
+                    // compute index among visible items
+                    const visible = items.filter(i => i.style.display !== 'none');
+                    const vIdx = visible.indexOf(it);
+                    openLightbox(vIdx);
+                });
+            });
+
+            // Prev/Next
+            function nav(offset) {
+                const visible = items.filter(i => i.style.display !== 'none');
+                if (!visible.length) return;
+                // find current position among visible
+                let pos = visible.findIndex(i => items.indexOf(i) === currentIndex);
+                pos = (pos + offset + visible.length) % visible.length;
+                openLightbox(pos);
+            }
+
+            prevBtn.addEventListener('click', () => nav(-1));
+            nextBtn.addEventListener('click', () => nav(1));
+            lbClose.addEventListener('click', closeLightbox);
+            lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+
+            // Keyboard
+            window.addEventListener('keydown', (e) => {
+                if (lb.classList.contains('open')) {
+                    if (e.key === 'Escape') closeLightbox();
+                    if (e.key === 'ArrowLeft') nav(-1);
+                    if (e.key === 'ArrowRight') nav(1);
+                }
+            });
+
+            // Initialize: small accessibility tweak to show all (default)
+            items.forEach(i => i.style.display = '');
+        })();
+
+        // Hover video playback
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('[data-hover-video]').forEach(card => {
+                const v = card.querySelector('video');
+                card.addEventListener('mouseenter', () => v.play().catch(() => { }));
+                card.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
+
+                // keyboard and touch support
+                card.addEventListener('focusin', () => v.play().catch(() => { }));
+                card.addEventListener('focusout', () => { v.pause(); v.currentTime = 0; });
+                card.addEventListener('click', () => v.paused ? v.play().catch(() => { }) : (v.pause(), v.currentTime = 0));
+            });
+        });
+    </script>
+</body>
+
+</html>

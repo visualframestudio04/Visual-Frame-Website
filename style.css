@@ -9,7 +9,7 @@ html{
 }
 
 body{
-    background: #080808;
+    background: linear-gradient(180deg, #000000 0%, #0f1724 100%);
     color: #fff;
 }
 
@@ -153,6 +153,35 @@ nav ul li a:hover::after{
 }
 .tab-contents.active-tab{
     display: block;
+}
+
+.teamgallery{
+    display: inline grid;
+    margin: 50px;
+}
+.teamgallery img{
+    border: 2px solid #515151;
+    border-radius: 10px;
+
+}
+
+.teamgallery .description{
+    color: #ababab;
+    padding: 20px;
+    text-align: center;
+}
+
+.teamgallery:hover {
+    transform: scale(1.1);
+    transition: border-color 0.5s, transform 0.5s;
+}
+.teamgallery:hover img {
+    border: 4px solid #ff004f;
+}
+
+.description:hover{
+    color: #ffffff;
+    transition: color 0.5s;
 }
 
 /* ---------------- service section ----------  */
@@ -441,4 +470,38 @@ nav .fa-solid {
     color: #61b752;
     margin-top: -30px;
     display: block;
+}
+
+/* Additional styles for fullportfolio.html portfolio section */
+.portfolio-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+.portfolio-item{
+    background: #0f0f0f;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,0,79,0.06);
+    transition: transform 0.35s, box-shadow 0.35s;
+}
+.portfolio-item:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.portfolio-item h3{
+    margin: 10px 0 14px;
+    font-size: 20px;
+    color: #fff;
+}
+.portfolio-item img, .portfolio-item video{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+@media (max-width: 480px){
+    .portfolio-item h3{ font-size: 16px; }
 }
