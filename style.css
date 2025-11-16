@@ -262,12 +262,20 @@ nav ul li a:hover::after{
     position: relative;
     overflow: hidden;
 }
-.work video {
+.work video{
     width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
 }
+
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
 .layer{
     width: 100%;
     height: 0;
@@ -303,6 +311,10 @@ nav ul li a:hover::after{
     text-align: center;
 }
 .work:hover video {
+    transform: scale(1.3);
+}
+
+.work:hover img {
     transform: scale(1.3);
 }
 .work:hover .layer{

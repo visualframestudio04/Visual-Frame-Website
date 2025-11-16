@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Portfolio Showcase</title>
     <link rel="stylesheet" href="portfolio01.css" />
+    <link rel="stylesheet" href="portfolio0102.css"/>
 </head>
 
 <body class="p-container">
@@ -29,7 +30,7 @@
 
     <header>
         <div>
-            <h1>Video Editing Portfolio</h1>
+            <h1>Video Editing - Portfolio Showcase</h1>
             <p class="lead">Selected projects — click a thumbnail to open details.</p>
         </div>
 
@@ -42,7 +43,7 @@
     </header>
 
     <main>
-        <section class="grid" id="gallery">
+        <section class="grid" id="gallery-videos">
             <!-- Items: adjust data attributes, image sources or captions as needed -->
 
             <!-- Portfolio Item 1 -->
@@ -229,11 +230,14 @@
         </section>
     </main>
 
+    <!-- CHANGE: Unified lightbox for BOTH images & videos (removed duplicates) -->
     <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="lb-inner" role="document">
             <button class="close-btn" id="lb-close" aria-label="Close">✕</button>
             <div class="lb-media" id="lb-media">
-                <video src="" alt="" id="lb-video" autoplay controls></video>
+                <!-- CHANGE: Both img and video present; JS will toggle display -->
+                <img src="" alt="" id="lb-img" style="display:none">
+                <video src="" alt="" id="lb-video" style="display:none" controls playsinline></video>
             </div>
             <aside class="lb-side" id="lb-side">
                 <h2 class="lb-title" id="lb-title">Project Title</h2>
@@ -249,15 +253,325 @@
 
     <footer>Tip: use filters above to narrow items. Keyboard: Esc to close, ← → to navigate.</footer>
 
+    <!-- Graphic Design section -->
+
+   <!-- CHANGE: Kept second header/galleries but renamed IDs to avoid duplicates -->
+    <header>
+        <div>
+            <h1>Graphic Design - Portfolio Showcase</h1>
+            <p class="lead">Selected projects — click a thumbnail to open details.</p>
+        </div>
+
+        <div class="controls" aria-label="Filter projects">
+            <button class="btn active" data-filter="all">All</button>
+            <button class="btn" data-filter="web">Web</button>
+            <button class="btn" data-filter="branding">Branding</button>
+            <button class="btn" data-filter="photo">Photography</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- CHANGE: Renamed image gallery id to 'gallery-images' to avoid duplicate id -->
+        <section class="grid" id="gallery-images">
+            <!-- Items: image cards -->
+
+
+            <!-- Items: image cards 01 -->
+
+            <article class="card" data-category="web" data-title="Product Landing"
+                data-desc="Responsive landing page focused on conversion and speed."
+                data-src="image/portfolio/Portfolio (1).jpg">
+                <span class="overlay-label">Web</span>
+                <img class="thumb" src="image/portfolio/Portfolio (1.1).jpg" alt="Product Landing screenshot"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Product Lan+ding</h3>
+                    <p class="cats">Web • UI/UX</p>
+                </div>
+            </article>
+
+            <!-- Items: image cards 02 -->
+            
+            <article class="card" data-category="branding" data-title="Brand Identity"
+                data-desc="Complete identity system for a boutique studio."
+                data-src="image/portfolio/Portfolio (2).jpg">
+                <span class="overlay-label">Branding</span>
+                <img class="thumb" src="image/portfolio/Portfolio (2).jpg" alt="Brand Identity preview"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Brand Identity</h3>
+                    <p class="cats">Branding • Art Direction</p>
+                </div>
+            </article>
+
+            <!-- Items: image cards 03 -->
+
+            <article class="card" data-category="photo" data-title="Landscape Series"
+                data-desc="Editorial photography series shot on location."
+                data-src="image/portfolio/Portfolio (3).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (3).jpg" alt="Landscape photograph"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Landscape Series</h3>
+                    <p class="cats">Photography • Editorial</p>
+                </div>
+            </article>
+
+
+            <!-- Items: image cards 04 -->
+
+
+            <article class="card" data-category="web" data-title="Dashboard App"
+                data-desc="Complex data visualization interface and admin tools."
+                data-src="image/portfolio/Portfolio (4).jpg">
+                <span class="overlay-label">Web</span>
+                <img class="thumb" src="image/portfolio/Portfolio (4).jpg" alt="Dashboard screenshot"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Dashboard App</h3>
+                    <p class="cats">Web • Data Viz</p>
+                </div>
+            </article>
+
+
+            <!-- Items: image cards 05 -->
+
+            <article class="card" data-category="branding" data-title="Packaging Design"
+                data-desc="Minimal packaging suite for a premium product line."
+                data-src="image/portfolio/Portfolio (5).jpg">
+                <span class="overlay-label">Branding</span>
+                <img class="thumb" src="image/portfolio/Portfolio (5).jpg" alt="Packaging design" loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Packaging Design</h3>
+                    <p class="cats">Branding • Product</p>
+                </div>
+            </article>
+
+            <!-- Items: image cards 06 -->
+
+            <article class="card" data-category="photo" data-title="Portrait Series"
+                data-desc="Studio portrait series exploring light and texture."
+                data-src="image/portfolio/Portfolio (6).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (6).jpg" alt="Portrait photograph"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Portrait Series</h3>
+                    <p class="cats">Photography • Studio</p>
+                </div>
+            </article>
+
+            <!-- Items: image cards 07 -->
+
+            <article class="card" data-category="web" data-title="E-commerce UI"
+                data-desc="User-centered e-commerce experience with accessible components."
+                data-src="image/portfolio/Portfolio (7).jpg">
+                <span class="overlay-label">Web</span>
+                <img class="thumb" src="image/portfolio/Portfolio (7).jpg" alt="E-commerce UI" loading="lazy">
+                <div class="meta">
+                    <h3 class="title">E-commerce UI</h3>
+                    <p class="cats">Web • Interaction</p>
+                </div>
+            </article>
+
+            <!-- Items: image cards 08 -->
+
+            <article class="card" data-category="branding" data-title="Event Identity"
+                data-desc="A lively, colorful identity system for a cultural festival."
+                data-src="image/portfolio/Portfolio (8).jpg">
+                <span class="overlay-label">Branding</span>
+                <img class="thumb" src="image/portfolio/Portfolio (8).jpg" alt="Event identity" loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Event Identity</h3>
+                    <p class="cats">Branding • Posters</p>
+                </div>
+            </article>
+
+            <!-- Items: image cards 09 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (9).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (9).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+        
+            <!-- Items: image cards 10 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (10).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (10).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+        
+            <!-- Items: image cards 11 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (11).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (11).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+       
+            <!-- Items: image cards 12 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (12).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (12).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+        
+            <!-- Items: image cards 13 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (13).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (13).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+        
+            <!-- Items: image cards 14 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (14).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (14).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+      
+            <!-- Items: image cards 15 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (15).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (15).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+       
+            <!-- Items: image cards 16 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (16).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (16).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+       
+            <!-- Items: image cards 17 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (17).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (17).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+       
+            <!-- Items: image cards 18 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (18).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (18).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+        
+            <!-- Items: image cards 19 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (19).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (19).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+       
+            <!-- Items: image cards 20 -->
+
+            <article class="card" data-category="photo" data-title="Street Photography"
+                data-desc="Candid moments captured across several cities."
+                data-src="image/portfolio/Portfolio (20).jpg">
+                <span class="overlay-label">Photo</span>
+                <img class="thumb" src="image/portfolio/Portfolio (20).jpg" alt="Street photography"
+                    loading="lazy">
+                <div class="meta">
+                    <h3 class="title">Street Photography</h3>
+                    <p class="cats">Photography • Documentary</p>
+                </div>
+            </article>
+        </section>
+
+        <footer>Tip: use filters above to narrow items. Keyboard: Esc to close, ← → to navigate.</footer>
+
+    </main>
+
+    <!-- CHANGE: Unified script — handles both image & video lightbox, filtering, hover-play -->
     <script>
-        // Lightweight gallery: filtering + lightbox with keyboard nav
         (function () {
-            const grid = document.getElementById('gallery');
-            const items = Array.from(grid.querySelectorAll('.card'));
+            // CHANGE: Collect all cards (both video and image)
+            const allCards = Array.from(document.querySelectorAll('.card'));
             const filters = document.querySelectorAll('[data-filter]');
-            let currentIndex = -1;
+
+            // CHANGE: Unified lightbox elements
             const lb = document.getElementById('lightbox');
-            const lbvideo = document.getElementById('lb-video');
+            const lbImg = document.getElementById('lb-img');
+            const lbVideo = document.getElementById('lb-video');
             const lbTitle = document.getElementById('lb-title');
             const lbDesc = document.getElementById('lb-desc');
             const lbClose = document.getElementById('lb-close');
@@ -265,93 +579,134 @@
             const nextBtn = document.getElementById('next-btn');
             const openLink = document.getElementById('open-link');
 
-            // Filtering
+            // CHANGE: Helper to detect video cards (checks for <video> or data-src .mp4)
+            function isVideoCard(card) {
+                if (card.querySelector('video')) return true;
+                if (card.hasAttribute('data-hover-video')) return true;
+                const s = (card.dataset.src || '').toLowerCase();
+                return s.endsWith('.mp4') || s.includes('.mp4?');
+            }
+
+            // CHANGE: Filtering works on allCards so both galleries filter consistently
             filters.forEach(btn => {
                 btn.addEventListener('click', () => {
                     filters.forEach(b => b.classList.remove('active'));
                     btn.classList.add('active');
                     const f = btn.dataset.filter;
-                    items.forEach(i => {
-                        i.style.display = (f === 'all' || i.dataset.category === f) ? '' : 'none';
+                    allCards.forEach(card => {
+                        const cat = card.dataset.category;
+                        if (!cat) {
+                            card.style.display = (f === 'all') ? '' : 'none';
+                        } else {
+                            card.style.display = (f === 'all' || cat === f) ? '' : 'none';
+                        }
                     });
                 });
             });
 
-            // Open lightbox
-            function openLightbox(index) {
-                const visible = items.filter(i => i.style.display !== 'none');
-                if (index < 0 || index >= visible.length) return;
-                const el = visible[index];
-                currentIndex = items.indexOf(el);
-                const src = el.dataset.src || el.querySelector('video')?.src;
-                lbvideo.src = src;
-                lbvideo.alt = el.dataset.title || '';
-                lbTitle.textContent = el.dataset.title || '';
-                lbDesc.textContent = el.dataset.desc || '';
-                openLink.href = src;
+            // CHANGE: openLightbox now supports both image & video cards
+            let currentVisibleIndex = -1;
+            function openLightbox(visibleIndex) {
+                const visible = allCards.filter(c => c.style.display !== 'none');
+                if (visibleIndex < 0 || visibleIndex >= visible.length) return;
+                const el = visible[visibleIndex];
+                currentVisibleIndex = visibleIndex;
+
+                const src = el.dataset.src || el.querySelector('img')?.src || el.querySelector('video')?.src || '';
+                const title = el.dataset.title || el.querySelector('.title')?.textContent || '';
+                const desc = el.dataset.desc || '';
+
+                // CHANGE: hide both first
+                lbImg.style.display = 'none';
+                lbVideo.style.display = 'none';
+                lbVideo.pause();
+                lbVideo.src = '';
+
+                if (isVideoCard(el)) {
+                    // CHANGE: load video into modal
+                    lbVideo.src = src;
+                    lbVideo.style.display = '';
+                    lbVideo.currentTime = 0;
+                    lbVideo.play().catch(() => { });
+                    openLink.href = src;
+                } else {
+                    // CHANGE: load image into modal
+                    lbImg.src = src;
+                    lbImg.style.display = '';
+                    openLink.href = src;
+                }
+
+                lbTitle.textContent = title;
+                lbDesc.textContent = desc;
+
                 lb.classList.add('open');
                 lb.setAttribute('aria-hidden', 'false');
                 document.body.style.overflow = 'hidden';
             }
 
+            // CHANGE: closeLightbox pauses video and clears src
             function closeLightbox() {
                 lb.classList.remove('open');
                 lb.setAttribute('aria-hidden', 'true');
                 document.body.style.overflow = '';
-                currentIndex = -1;
+                lbVideo.pause();
+                lbVideo.src = '';
+                currentVisibleIndex = -1;
             }
 
-            // Click items
-            items.forEach((it, idx) => {
-                it.addEventListener('click', () => {
-                    // compute index among visible items
-                    const visible = items.filter(i => i.style.display !== 'none');
-                    const vIdx = visible.indexOf(it);
+            // CHANGE: Attach click on each card to open unified lightbox
+            allCards.forEach(card => {
+                card.addEventListener('click', (e) => {
+                    const visible = allCards.filter(c => c.style.display !== 'none');
+                    const vIdx = visible.indexOf(card);
                     openLightbox(vIdx);
                 });
             });
 
-            // Prev/Next
+            // CHANGE: Prev/Next navigation works across visible items
             function nav(offset) {
-                const visible = items.filter(i => i.style.display !== 'none');
+                const visible = allCards.filter(c => c.style.display !== 'none');
                 if (!visible.length) return;
-                // find current position among visible
-                let pos = visible.findIndex(i => items.indexOf(i) === currentIndex);
-                pos = (pos + offset + visible.length) % visible.length;
-                openLightbox(pos);
+                currentVisibleIndex = (currentVisibleIndex + offset + visible.length) % visible.length;
+                openLightbox(currentVisibleIndex);
             }
-
             prevBtn.addEventListener('click', () => nav(-1));
             nextBtn.addEventListener('click', () => nav(1));
+
+            // CHANGE: close handlers
             lbClose.addEventListener('click', closeLightbox);
             lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
 
-            // Keyboard
+            // CHANGE: keyboard navigation preserved
             window.addEventListener('keydown', (e) => {
-                if (lb.classList.contains('open')) {
-                    if (e.key === 'Escape') closeLightbox();
-                    if (e.key === 'ArrowLeft') nav(-1);
-                    if (e.key === 'ArrowRight') nav(1);
-                }
+                if (!lb.classList.contains('open')) return;
+                if (e.key === 'Escape') closeLightbox();
+                if (e.key === 'ArrowLeft') nav(-1);
+                if (e.key === 'ArrowRight') nav(1);
             });
 
-            // Initialize: small accessibility tweak to show all (default)
-            items.forEach(i => i.style.display = '');
-        })();
+            // Initialize: show all items (default)
+            allCards.forEach(i => i.style.display = '');
 
-        // Hover video playback
-        document.addEventListener('DOMContentLoaded', () => {
+            // CHANGE: Hover video playback preserved for cards with data-hover-video
             document.querySelectorAll('[data-hover-video]').forEach(card => {
                 const v = card.querySelector('video');
+                if (!v) return;
                 card.addEventListener('mouseenter', () => v.play().catch(() => { }));
                 card.addEventListener('mouseleave', () => { v.pause(); v.currentTime = 0; });
 
                 // keyboard and touch support
                 card.addEventListener('focusin', () => v.play().catch(() => { }));
                 card.addEventListener('focusout', () => { v.pause(); v.currentTime = 0; });
-                card.addEventListener('click', () => v.paused ? v.play().catch(() => { }) : (v.pause(), v.currentTime = 0));
+
+                // clicking card opens lightbox (handled above)
+                card.addEventListener('click', () => {
+                    // no extra inline toggle to avoid conflict
+                });
             });
-        });
+
+            // Accessibility: ensured video is paused when modal closes (handled in closeLightbox)
+        })();
     </script>
 </body>
 
